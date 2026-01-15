@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@unipass/*": ["../../packages/unipass.customs/src/*"],
+      "@http/*": ["/src/*"]
+    }
+  },
+  "include": [
+    "../../packages/unipass.customs/src/**/*",
+    "../../packages/http/src/**/*"
+  ]
+}

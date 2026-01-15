@@ -1,0 +1,25 @@
+{
+  "name": "@workspace/unipass.customs",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src/**/*.ts"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "@workspace/http": "workspace:*",
+    "ramda": "^0.30.1"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.30.2"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
